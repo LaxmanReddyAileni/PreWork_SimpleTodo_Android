@@ -2,6 +2,7 @@ package com.example.simpletodo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -23,6 +24,7 @@ class MainActivity : AppCompatActivity() {
         //OnClickListener is an interface
        val onLongClickListener = object : TaskItemAdapter.OnLongClickListener{
            override fun onItemLongClicked(position: Int) {
+               Log.i("LongPressed","onLongClickListener is executed")
               taskList.removeAt(position)
                adapter.notifyDataSetChanged()
                saveItems()
@@ -55,12 +57,14 @@ class MainActivity : AppCompatActivity() {
 
 //Get the File we need
     fun getDataFile(): File {
+    Log.i("getDataFile","Entered getDataFile()")
     //Every Line is going to represent a specific task in our lis of tasks
         return File(filesDir,"data.txt")
     }
 ///load the items by reading every line in the data
     fun loadItems(){
         try {
+            Log.i("loadItems","Entered loadItems()")
             taskList =FileUtils.readLines(getDataFile(), Charset.defaultCharset())
         }catch (ioException:IOException){
             ioException.printStackTrace()
@@ -69,6 +73,7 @@ class MainActivity : AppCompatActivity() {
     //save the items by writing items into data file
     fun saveItems(){
     try {
+        Log.i("saveItems","Entered saveItems()")
         FileUtils.writeLines(getDataFile(),taskList)
     }catch (ioException:IOException){
         ioException.printStackTrace()
