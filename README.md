@@ -18,11 +18,7 @@ The following **Adding Tasks and Deleting Tasks** functionality is completed:
 
 ## Video Walkthrough
 Here's the video drive link https://drive.google.com/file/d/1Ww2W4GI5DmuWK06kRfSk9aQ86Eyh7V54/view?usp=sharing
-Here's a walkthrough of implemented user stories:
 
-<img src='https://drive.google.com/file/d/1Ww2W4GI5DmuWK06kRfSk9aQ86Eyh7V54/view?usp=sharing' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-
-GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
