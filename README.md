@@ -18,7 +18,7 @@ The following **Adding Tasks and Deleting Tasks** functionality is completed:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented user stories:
+Here's a walkthrough of implemented SimpleToDo
 
 <img src='https://i.imgur.com/hmin4D7.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
